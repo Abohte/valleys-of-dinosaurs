@@ -9,6 +9,7 @@ class DinosaursController < ApplicationController
 
   def new
     @dinosaur = Dinosaur.new
+    load_valleys
   end
 
   def create
@@ -24,6 +25,7 @@ class DinosaursController < ApplicationController
 
   def edit
     @dinosaur = Dinosaur.find(params[:id])
+    load_valleys
   end
 
   def update
@@ -47,7 +49,11 @@ class DinosaursController < ApplicationController
   private
 
   def dinosaur_params
-    params.require(:dinosaur).permit(:name, :age, :image_url)
+    params.require(:dinosaur).permit(:name, :age, :image_url, :valley_id)
+  end
+
+  def load_valleys
+    @valleys = Valley.all
   end
 
 end

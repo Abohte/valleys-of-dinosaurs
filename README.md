@@ -1,24 +1,40 @@
-# README
+# Valleys of Dinosaurs
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails app made during week 1 of the 9-week Codaisseur Academy.
 
-Things you may want to cover:
+Making this app was an exercise to get to know the Rails framework and PostgreSQL.
 
-* Ruby version
+## Steps
 
-* System dependencies
+While working on this app I followed these steps:
 
-* Configuration
+1. Setting up project with Rails and PostgreSQL.
+2. Creating Dinosaur model.
+3. Setting up controllers and views for Dinosaurs.
+4. Creating Valley model and association.
+5. Setting up controllers and views for Valleys.
 
-* Database creation
+## Database Structure
 
-* Database initialization
+1. Dinosaurs
 
-* How to run the test suite
+  * name:string
+  * age:integer
+  * image_url:string
+  * valley_id:bigint
 
-* Services (job queues, cache servers, search engines, etc.)
+2. Valleys
 
-* Deployment instructions
+  * name:string
 
-* ...
+## Running Locally
+
+Make sure you have [Ruby](https://www.ruby-lang.org/en/) and [Bundler](http://bundler.io/) installed.
+
+```bash
+git clone git@github.com:Abohte/valleys-of-dinosaurs.git
+cd valleys-of-dinosaurs
+bundle install
+rails db:create db:migrate db:seed
+rails server
+```

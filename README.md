@@ -2,7 +2,7 @@
 
 Rails app made during week 1 of the 9-week Codaisseur Academy.
 
-Making this app was an exercise to get to know the Rails framework and PostgreSQL.
+This app was an exercise to get to know the Rails framework and PostgreSQL.
 
 ## Steps
 

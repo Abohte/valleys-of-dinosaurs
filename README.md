@@ -16,15 +16,13 @@ While working on this app I followed these steps:
 
 ## Database Structure
 
-1. Dinosaurs
+#### Dinosaurs  
+ * name:string
+ * age:integer
+ * image_url:string
+ * valley_id:bigint
 
-  * name:string
-  * age:integer
-  * image_url:string
-  * valley_id:bigint
-
-2. Valleys
-
+#### Valleys
   * name:string
 
 ## Running Locally
